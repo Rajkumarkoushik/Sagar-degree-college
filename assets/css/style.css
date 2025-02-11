@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff ;
+    font-weight: 700;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #696666;
+    padding: 10px 0px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+.padding{
+    padding: 30px 20px;
+}
+.text-center{
+    text-align: center;
+}
+
+:root {
+    --main-color: #7B2D2A;
+    --primary-color: #4C3676;
+    --secondary-color: #F4BD5A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+span {
+    color: var(--secondary-color);
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 
+1. Header section.
+2. Navigation section.
+3. Staff section.
+4. Why Choose section.
+5.Footer section.
+6. Back to top section.
+7.Banner section.
+8. Our Vision and Mission section.
+9.Contact section.
+*/
+
+/* 1. Header section starts. */
+.header-main {
+    background-color: var(--primary-color);
+}
+.header-main i {
+    font-size: 16px;
+    padding-right: 5px;
+    color: var(--main-color);
+}
+
+/* 1. Header section ends. */
+
+/* 2. Navigation section starts. */
+.navigation-main {
+    position: sticky;
+    top: 0px;
+    z-index: +99;
+    background: #fff;
+}
+.nav-img img {
+    width: 100%;
+    height: 80px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links li a {
+    color: var(--main-color);
+}
+.nav-links li a:hover {
+    color: var(--secondary-color);
+}
+.hamburger-menu {
+    display: none;
+}
+.navigation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button {
+    font-size: 14px;
+    padding: 5px 18px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--secondary-color);
+    box-shadow: 0px 0px 4px 0px #000;
+    background: var(--primary-color);
+    transition: all 0.5s ease-in-out;
+}
+.button:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+}
+/* 2. Navigation section ends. */
+
+/* 3. Staff section starts. */
+table {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    box-shadow: 0px 0px 3px 2px;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid var(--primary-color);
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+td {
+    font-weight: 500;
+    color: #000;
+}
+td:hover{
+    background-color: var(--secondary-color);
+}
+
+/* 3. Staff section ends. */
+
+/* 4. Why Choose section starts. */
+.whychoose-main li {
+
+        font-size: 12px;
+        padding-bottom: 5px;
+        font-weight: 500;
+        color: #696666;
+    }
+.whychoose-main li::before{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 10px;
+    color: var(--main-color);
+}
+
+
+/* 4. Why Choose section ends. */
+
+/* 5. Footer section Starts. */
+footer{
+    background-color: var(--main-color);
+    p{
+        margin-bottom: 0px !important;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+/* 5. Footer section ends. */
+
+/* 6. Back to top section starts. */
+.back-to-top{
+    transform: scale(0);
+    transition: all 0.5s;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    a{
+    background: var(--main-color);
+    padding: 8px 12px;
+    border-radius: 7%;
+    box-shadow: 0px 0px 3px 0px; 
+}
+}
+.scroll-active{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+/* 6. Back to top section ends. */
+
+/* 7. Banner section starts. */
+.banner-main img{
+    width: 100%;
+    height: 100vh;
+}
+/* 7. Banner section ends. */
+
+/* 8. Our vision and mission section starts. */
+.vision-mission-main{
+    background-color: var(--secondary-color);
+}
+.vision-mission-main p, li{
+    font-size: 14px;
+    color: #fff;
+}
+.vision-mission-main li{
+    padding-bottom: 10px;
+}
+/* 8. Our vision and mission section ends. */
+
+/* 9. Contact section ends. */
+input::placeholder{
+    color: var(--main-color);
+}
+.form-content a{
+        color: #696666;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+}
+input, select, textarea{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 12px;
+    border: 2px solid var(--secondary-color);
+}
+input:focus, textarea:focus{
+    border: 2px solid var(--primary-color);
+}
+.form{
+    display: flex;
+    gap: 10px;
+}
+textarea{
+    height: 100px;
+}
+/* 9. Contact section ends. */
